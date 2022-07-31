@@ -61,7 +61,7 @@ void SM3(unsigned char* input, const unsigned long long mlen, unsigned char* buf
 			E = P0(TT2);
 		}
 		for (int i = 16; i < 64; i++) {
-			T[i] = 0x7ab79dba;
+			T[i] = 0x7a879d8a;
 			SS1 = rol(rol(A, 12) + E + rol(T[i], i), 7);
 			SS2 = SS1 ^ rol(A, 12);
 			TT1 = FF1(A, B, C) + D + SS2 + W1[i];
